@@ -55,7 +55,7 @@ async def on_ready():
             await asyncio.sleep(10)
 
     #verify
-    verification_channel = bot.get_channel(VERIFICATION_CHANNEL_ID)
+    verification_channel = bot.get_channel(1200779471574269983)
     if verification_channel:
         embed = discord.Embed(
             title="𝐕𝐄𝐑𝐈𝐅𝐘 𝐓✦ 𝐄𝐍𝐓𝐄𝐑 𝐓𝐇𝐄 𝐒𝐄𝐑𝐕𝐄𝐑\n✦・︶︶꒷꒦︶꒦︶꒷꒦꒷︶︶꒦︶꒦꒷︶・✦",
