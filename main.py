@@ -8,8 +8,6 @@ import asyncio
 from myserver import server_on
 import os
 
-phone = "0973096436"
-
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 class TerminalColors:
@@ -27,8 +25,7 @@ Number_emoji = "<a:bell:1285963604432261160> "
 Vrf_emoji = "<a:checkmark:1285963484697202729> "
 Vrfrec_emoji = "<a:vrf_rec:1285602992988491806> "
 
-GUILD_ID = 1284250028625363006
-
+GUILD_ID = 1103309084104589395
 start_time = time.time()
 
 @bot.event
@@ -100,7 +97,7 @@ async def ping(interaction):
     #bot_latency
     bot_latency = (bot.latency*1000)
     emmbed = discord.Embed(title="📖  AiWaen Information ↷",
-                           description=f"> ไอดี : ``{str(bot.user.id)}``\n> ชื่อ : ``{bot.user.name}``\n> เซิฟเวอร์ : ``{len(bot.guilds)}``\n> จำนวนผู้ใช้ : ``{len(list(bot.get_all_members()))}``\n> discord.py Version : ``2.0+``\n> เวลาทำงาน : ``{int(uptime_hours)}h {int(uptime_minutes)}m {int(uptime_seconds)}s``",
+                           description=f"> ไอดี : ``{str(bot.user.id)}``\n> ชื่อ : ``{bot.user.name}``\n> เซิฟเวอร์ที่ใช้งาน : ``{len(bot.guilds)}``\n> จำนวนผู้ใช้ : ``{len(list(bot.get_all_members()))}``\n> discord.py Version : ``2.0+``\n> เวลาทำงาน : ``{int(uptime_hours)}h {int(uptime_minutes)}m {int(uptime_seconds)}s``",
                            color=0xff0064,
                            timestamp=discord.utils.utcnow())
     emmbed.set_image(url='https://media.discordapp.net/attachments/1284250029208502326/1285596266037903370/bot_info2.gif?ex=66ead853&is=66e986d3&hm=f3bfbde9fc4a547a762093b175e6a99850ea5d34168c9c9ada827280199d1d77&=')
@@ -122,8 +119,8 @@ async def on_member_join(member):
     await channel.send(embed = emmbed) #ส่งข้อความไปที่ห้องนั้นๆ
 
 #vrf
-VERIFIED_ROLE_ID = 1284250411288629299
-VERIFICATION_CHANNEL_ID = 1284250029208502326
+VERIFIED_ROLE_ID = 1103309084104589397
+VERIFICATION_CHANNEL_ID = 1200779471574269983
 
 
 
